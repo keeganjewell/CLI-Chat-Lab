@@ -1,16 +1,15 @@
-#!/usr/bin/env python3
 import sys
 from pathlib import Path
 from llama_cpp import Llama
 
 MODEL_PATH = Path("models/qwen2.5-0.5b/qwen2.5b-q4_k_m.gguf")
 
-# Model parameters
+
 N_CTX = 4096
 N_THREADS = 4
 N_BATCH = 256
 
-# System prompt (sets the bot's style)
+
 SYSTEM_PROMPT = (
     "You are a helpful teaching assistant. Keep answers concise, "
     "but include clarifying steps when appropriate."
@@ -42,12 +41,10 @@ from llama_cpp import Llama
 
 MODEL_PATH = Path("models/qwen2.5-0.5b/qwen2.5b-q4_k_m.gguf")
 
-# Model parameters
 N_CTX = 4096
 N_THREADS = 4
 N_BATCH = 256
 
-# System prompt (sets the bot's style)
 SYSTEM_PROMPT = (
     "You are a helpful teaching assistant. Keep answers concise, "
     "but include clarifying steps when appropriate."
